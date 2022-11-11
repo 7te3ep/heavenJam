@@ -40,7 +40,7 @@ function handleObject(gameFrame){
 }
 
 function handleEnemies(gameFrame){
-    if (gameFrame % 10 == 0 || gameFrame == 0){enemiesArray.push(new Enemies(randomInteger(50,950),10))}
+    if (gameFrame % 20 == 0 || gameFrame == 0){enemiesArray.push(new Enemies(randomInteger(50,950),10))}
     if (enemiesArray.length!=0){closestEnemie = {x:enemiesArray[0].x+enemiesArray[0].width/2,y:enemiesArray[0].y+enemiesArray[0].height/2}}
 
     for (let i = 0; i <enemiesArray.length; i++){

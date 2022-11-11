@@ -8,7 +8,7 @@ class Enemies {
 
         this.speed = 2
 
-        this.life = 5
+        this.life = 30
 
         this.width = 50
         this.height = 50
@@ -42,7 +42,7 @@ class Enemies {
     test(){
         ctx.fillStyle = "red";
         ctx.fillRect(this.x, this.y, this.width, this.height);
-        ctx.fillRect(this.x, this.y-20, this.life*10, 10);
+        ctx.fillRect(this.x, this.y-20, this.life*1.67, 10);
     }
 }
 
